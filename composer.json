@@ -1,0 +1,24 @@
+{
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*",
+    "ext-mysqli": "*",
+    "psr/log": "^1.1"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master",
+    "symfony/var-dumper": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Core\\": "src/Core",
+      "App\\": "src/App"
+    }
+  },
+  "scripts": {
+    "serve": "php -S 0.0.0.0:8080 -t public"
+  }
+}
